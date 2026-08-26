@@ -1,0 +1,11 @@
+# Dependencias — se regeneran con npm install
+node_modules/
+package-lock.json
+
+# Logs locales de pruebas
+*.log
+
+# Nunca deben subirse (por si algún día aparecen aquí)
+*.pem
+*.key
+.env

@@ -1,0 +1,14 @@
+{
+  "name": "cca-login",
+  "version": "1.0.0",
+  "description": "Puente de identidad de UPB-CIENTIFICA: traduce JSON del navegador a SOAP contra cca-soap",
+  "main": "src/servidor.js",
+  "scripts": {
+    "start": "node src/servidor.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "qrcode": "^1.5.4",
+    "soap": "^1.1.4"
+  }
+}
