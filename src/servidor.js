@@ -64,6 +64,10 @@ app.post("/api/login", async (req, res) => {
     const r = await soapcli.autenticar(usuario, clave, totp || "");
     res.json({ token: r.token, expiraEn: r.expiraEn, uid: r.uid, home: r.home, quota: r.quota });
   } catch (e) {
+    console.error("=== fallo login ===");
+    console.error("mensaje:", e && e.message);
+    console.error("fault:", JSON.stringify(e?.root?.Envelope?.Body?.Fault, null, 2));
+    console.error("===================");
     res.status(401).json({ error: traducirFalloSoap(e) });
   }
 });

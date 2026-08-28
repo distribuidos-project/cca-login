@@ -61,7 +61,7 @@ cca-login/
 
 ```bash
 npm install
-SOAP_WSDL_URL=http://<host-de-cca-soap>/usuarios.wsdl \
+SOAP_WSDL_URL=http://192.168.1.16/usuarios.wsdl \
 PUERTO=8081 \
 ORIGEN_PERMITIDO=http://localhost:8080 \
 node src/servidor.js
